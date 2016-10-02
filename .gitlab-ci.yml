@@ -3,8 +3,4 @@ before_script:
 - bash ci/docker_install.sh
 build:hwapp:
   script:
-  - cd hwapp && dotnet restore && dotnet run
-test:unittest:
-  script:
-  - cd unit-testing-using-dotnet-test/src/PrimeService && dotnet restore
-  - cd ../../../unit-testing-using-dotnet-test/test/PrimeService.Tests && dotnet restore && dotnet test
+  - cd src/BigTree && dotnet restore && dotnet run
